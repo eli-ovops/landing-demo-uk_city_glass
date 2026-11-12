@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<audit version="0.0.87">
+<site url="https://cityglassukltd.co.uk" crawled="20" date="2026-08-29T11:14:08.501Z"/>
+<score overall="46" grade="F">
+ <group name="SEO" score="47" errors="90" warnings="230"/>
+ <group name="Performance" score="38" errors="19" warnings="130"/>
+ <group name="Security" score="45" errors="0" warnings="44"/>
+ <group name="Agents" score="34" errors="0" warnings="21"/>
+ <cat name="Accessibility" score="46"/>
+ <cat name="Images" score="42"/>
+ <cat name="Mobile" score="37"/>
+ <cat name="Performance" score="38"/>
+ <cat name="Core SEO" score="42"/>
+ <cat name="Structured Data" score="38"/>
+ <cat name="Content" score="48"/>
+ <cat name="Security" score="42"/>
+ <cat name="Agent Experience" score="34"/>
+ <cat name="Social Media" score="90"/>
+ <cat name="E-E-A-T" score="84"/>
+ <cat name="Links" score="94"/>
+ <cat name="Local SEO" score="71"/>
+ <cat name="Crawlability" score="100"/>
+ <cat name="Internationalization" score="100"/>
+ <cat name="Site Integrity" score="100"/>
+ <cat name="Legal Compliance" score="100"/>
+ <cat name="URL Structure" score="100"/>
+</score>
+<summary passed="1877" warnings="520" failed="109"/>
+<scan-scope origin="cli" crawled="20" max-pages="20" capped="true"/>
+<technologies first-scan="false" added="0" removed="0">
+ <tech name="WordPress" cat="cms"/>
+ <tech name="LiteSpeed" cat="web-server"/>
+ <tech name="Google Fonts" cat="font"/>
+ <tech name="Font Awesome" cat="font"/>
+ <tech name="jQuery" cat="other"/>
+ <tech name="CookieYes" cat="security"/>
+</technologies>
+<issues>
+ <rule id="core/meta-description" severity="error" category="Core SEO" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/core/meta-description">
+  Missing meta description
+  Pages (5/19): /blind-installations/, /blog/, /contact-us/, /customer-service/, /door-window-maintenance/
+ </rule>
+ <rule id="a11y/aria-command-name" severity="error" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/aria-command-name">
+  1 command element(s) without accessible names
+  Pages (1): /
+  Items (1):
+   - a[href=&quot;https://www.trustedtrader.scot...&quot;]
+ </rule>
+ <rule id="a11y/frame-title" severity="error" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/frame-title">
+  1 iframe(s) without title attribute
+  Pages (1): /contact-us/
+  Items (1):
+   - iframe (www.google.com)
+ </rule>
+ <rule id="a11y/zoom-disabled" severity="error" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/zoom-disabled">
+  Viewport restricts user zoom
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (2):
+   - maximum-scale=1.0
+   - user-scalable=0
+ </rule>
+ <rule id="mobile/viewport-zoom" severity="error" category="Mobile" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/mobile/viewport-zoom">
+  Viewport disables user zoom (accessibility issue)
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (2):
+   - maximum-scale=1
+   - user-scalable=no
+ </rule>
+ <rule id="core/twitter-cards" severity="info" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/twitter-cards">
+  summary_large_image card requires an image
+  Pages (5/12): /, /blog/, /contact-us/, /gallery/, /glass-balustrades-edinburgh/
+ </rule>
+ <rule id="images/optimized" severity="info" category="Images" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/images/optimized">
+  Images may not be optimized - consider using an image CDN
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+ </rule>
+ <rule id="perf/inp-hints" severity="info" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/inp-hints">
+  N blocking scripts (consider async/defer)
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/20):
+   - / (11 blocking scripts (consider async/defer))
+   - /blind-installations/ (8 blocking scripts (consider async/defer))
+   - /blog/ (14 blocking scripts (consider async/defer))
+   - /contact-us/ (11 blocking scripts (consider async/defer))
+   - /customer-service/ (8 blocking scripts (consider async/defer))
+ </rule>
+ <rule id="perf/preconnect" severity="info" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/preconnect">
+  Missing preconnect for 1 CDN(s)
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (1):
+   - fonts.googleapis.com
+ </rule>
+ <rule id="a11y/landmark-regions" severity="info" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/landmark-regions">
+  No &lt;main&gt; landmark found
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+ </rule>
+ <rule id="legal/subprocessor-disclosure" severity="info" category="Legal Compliance" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/legal/subprocessor-disclosure">
+  No sub-processor / data-processing (DPA) disclosure found
+ </rule>
+ <rule id="ax/llms-txt" severity="info" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/llms-txt">
+  No /llms.txt found — consider adding one so AI agents can discover your key content
+ </rule>
+ <rule id="ax/markdown-response" severity="info" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/markdown-response">
+  No Markdown response — consider honoring Accept: text/markdown or publishing a .md variant so agents get clean content
+ </rule>
+ <rule id="core/meta-title" severity="warning" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/meta-title">
+  Title too short
+  Pages (3): /contact-us/, /gallery/, /upvc-casement-windows/
+  Items (3):
+   - /contact-us/ (Contact - City Glass UK Ltd (27 chars))
+   - /gallery/ (Gallery - City Glass UK Ltd (27 chars))
+   - /upvc-casement-windows/ (Casement - City Glass UK Ltd (28 chars))
+ </rule>
+ <rule id="core/h1" severity="warning" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/h1">
+  Multiple HN tags found (N)
+  Pages (5/17): /, /blind-installations/, /customer-service/, /door-window-maintenance/, /glass-balustrades-edinburgh/
+  Items (5/17):
+   - / (Multiple H1 tags found (2))
+   - /blind-installations/ (Multiple H1 tags found (3))
+   - /customer-service/ (Multiple H1 tags found (4))
+   - /door-window-maintenance/ (Multiple H1 tags found (3))
+   - /glass-balustrades-edinburgh/ (Multiple H1 tags found (3))
+ </rule>
+ <rule id="core/og-tags" severity="warning" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/og-tags">
+  Missing og:description; Missing og:image - social shares will lack imagery
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+ </rule>
+ <rule id="security/csp" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/csp">
+  No Content-Security-Policy header
+ </rule>
+ <rule id="security/hsts" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/hsts">
+  Missing Strict-Transport-Security header
+ </rule>
+ <rule id="security/sri" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/sri">
+  3 cross-origin resources without Subresource Integrity
+  Pages (5/29): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/9):
+   - https://cdn-cookieyes.com/client_data/739919bc271dc39ff996f9c39ea1bd7c/script.js (script)
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&amp;subset=latin,latin-ext&amp;display=swap (stylesheet)
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic|Bungee:regular&amp;subset=latin,latin-ext&amp;display=swap (stylesheet)
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Encode+Sans+Condensed:100,200,300,regular,500,600,700,800,900|Bungee:regular&amp;subset=latin,latin-ext&amp;display=swap (stylesheet)
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Bungee:regular&amp;subset=latin,latin-ext&amp;display=swap (stylesheet)
+ </rule>
+ <rule id="security/x-frame-options" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/x-frame-options">
+  No clickjacking protection
+ </rule>
+ <rule id="security/form-captcha" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/form-captcha">
+  2 public form(s) without CAPTCHA
+  Pages (1): /
+  Items (2):
+   - [action=&quot;https://cityglassukltd.co.uk/&quot;]
+   - [action=&quot;https://cityglassukltd.co.uk/&quot;]
+ </rule>
+ <rule id="security/new-tab" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/new-tab">
+  N external link(s) missing rel=&quot;noopener&quot;
+  Pages (5/24): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/8):
+   - https://www.facebook.com/CityGlassUkLtd
+   - https://www.facebook.com/CityGlassUkLtd
+   - https://www.instagram.com/cityglassukltd/
+   - https://www.instagram.com/cityglassukltd/
+   - https://www.linkedin.com/in/cityglassukltd
+ </rule>
+ <rule id="links/broken-external-links" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/broken-external-links">
+  1 broken external link(s): 1 with 999
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (1):
+   - https://www.linkedin.com/in/cityglassukltd (https://www.linkedin.com/in/cityglassukltd (999)) [status: 999] (from: /, /blind-installations/, /blog/, /contact-us/, /customer-service/; +15 more)
+ </rule>
+ <rule id="links/https-downgrade" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/https-downgrade">
+  2 link(s) downgrade to HTTP
+  Pages (3): http://www.edinburgh.gov.uk/, /trusted-trader-status-city-glass-uk-ltd/, http://www.edinburgh.gov.uk/info/20027/trading_standards
+  Items (2):
+   - http://www.edinburgh.gov.uk/
+   - http://www.edinburgh.gov.uk/info/20027/trading_standards
+ </rule>
+ <rule id="content/hidden-text" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/hidden-text">
+  N hidden element(s) containing N characters of text
+  Pages (4): /glass-repairs/, /glazed-doors/, /roof-lanterns/, /secondary-glazing/
+  Items (1):
+   - span (span — color #ffffff on background inherited) [techniques: [&quot;color #ffffff on background inherited&quot;], chars: 62, links: 0, snippet: All aspects of glazing repairs – traditional &amp; modern systems.]
+ </rule>
+ <rule id="content/heading-hierarchy" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/heading-hierarchy">
+  1 empty heading(s) found; Skipped heading levels detected
+  Pages (5/10): /blind-installations/, /contact-us/, /customer-service/, /door-window-maintenance/, /speciality-glass-installations/
+  Items (5/6):
+   - /blind-installations/ (1 empty heading(s) found)
+   - /customer-service/ (1 empty heading(s) found)
+   - /timber-windows-edinburgh/ (1 empty heading(s) found)
+   - H1 -&gt; H3
+   - H1 -&gt; H4
+ </rule>
+ <rule id="content/keyword-stuffing" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/keyword-stuffing">
+  N word(s) may be overused
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/13):
+   - balustrades (&quot;balustrades&quot; (4.7%)) [count: 20, density: 4.694835680751173]
+   - casement (&quot;casement&quot; (4.0%)) [count: 10, density: 3.9840637450199203]
+   - city (&quot;city&quot; (4.2%)) [count: 11, density: 4.166666666666666]
+   - doors (&quot;doors&quot; (3.9%)) [count: 18, density: 3.8876889848812093]
+   - double (&quot;double&quot; (6.0%)) [count: 16, density: 6.037735849056604]
+ </rule>
+ <rule id="content/date-agreement" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/date-agreement">
+  This Article states datePublished N-N-NTN:N:N+N:N in its schema but shows the reader no date at all
+  Pages (5/8): /blind-installations/, /customer-service/, /door-window-maintenance/, /speciality-glass-installations/, /the-benifits-of-double-glazing/
+  Items (5/8):
+   - /blind-installations/ (This Article states datePublished 2025-07-24T13:46:43+00:00 in its schema but shows the reader no date at all)
+   - /customer-service/ (This Article states datePublished 2025-07-24T11:53:32+00:00 in its schema but shows the reader no date at all)
+   - /door-window-maintenance/ (This Article states datePublished 2025-07-24T13:59:20+00:00 in its schema but shows the reader no date at all)
+   - /speciality-glass-installations/ (This Article states datePublished 2025-07-24T12:49:36+00:00 in its schema but shows the reader no date at all)
+   - /the-benifits-of-double-glazing/ (This Article states datePublished 2025-07-22T14:05:40+00:00 in its schema but shows the reader no date at all)
+ </rule>
+ <rule id="content/word-count" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/word-count">
+  Thin content: N words (min N)
+  Pages (5): /contact-us/, /door-window-maintenance/, /gallery/, /speciality-glass-installations/, /triple-glazing/
+  Items (5):
+   - /contact-us/ (Thin content: 195 words (min 300))
+   - /door-window-maintenance/ (Thin content: 283 words (min 300))
+   - /gallery/ (Thin content: 154 words (min 300))
+   - /speciality-glass-installations/ (Thin content: 239 words (min 300))
+   - /triple-glazing/ (Thin content: 284 words (min 300))
+ </rule>
+ <rule id="schema/json-ld-valid" severity="warning" category="Structured Data" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/schema/json-ld-valid">
+  Invalid JSON-LD syntax
+  Pages (5/8): /blind-installations/, /customer-service/, /door-window-maintenance/, /speciality-glass-installations/, /the-benifits-of-double-glazing/
+  Items (4):
+   - Article:image (Article missing image) [message: Validation: Article.image must be a string or array of strings, severity: invalid, path: [&quot;image&quot;]]
+   - Article:publisher (Article missing publisher) [message: Validation: Article.publisher is required, severity: missing, path: [&quot;publisher&quot;]]
+   - parse-0 (Validation: Article.publisher is required)
+   - parse-1 (Validation: Article.image must be a string or array of strings)
+ </rule>
+ <rule id="schema/coverage-outlier" severity="warning" category="Structured Data" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/schema/coverage-outlier">
+  1 of 9 page(s) are missing structured data their same-type siblings have (article Article+BreadcrumbList+ImageObject+Person+WebPage+WebSite)
+  Pages (1): /blog/
+  Items (3):
+   - article:Article (8 of 9 article pages have Article schema, these 1 do not) [pageType: article, schemaType: Article, richResult: true, have: 8, total: 9, missing: 1] (from: /blog/)
+   - article:ImageObject (8 of 9 article pages have ImageObject schema, these 1 do not) [pageType: article, schemaType: ImageObject, richResult: false, have: 8, total: 9, missing: 1] (from: /blog/)
+   - article:Person (8 of 9 article pages have Person schema, these 1 do not) [pageType: article, schemaType: Person, richResult: true, have: 8, total: 9, missing: 1] (from: /blog/)
+ </rule>
+ <rule id="images/image-file-size" severity="warning" category="Images" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/images/image-file-size">
+  13 image(s) exceed 200.0 KB
+  Pages (5/6): /, /glass-repairs/, /roof-lanterns/, /secondary-glazing/, /speciality-glass-installations/
+  Items (5/13):
+   - /wp-content/uploads/2023/04/splashbacks.png [sizeBytes: 987042, size: 963.9 KB, status: 200, contentType: image/png] (from: /)
+   - /wp-content/uploads/2024/02/Untitled-design-1-400x284.png [sizeBytes: 207254, size: 202.4 KB, status: 200, contentType: image/png] (from: /speciality-glass-installations/)
+   - /wp-content/uploads/2024/05/1-3.jpg [sizeBytes: 367930, size: 359.3 KB, status: 200, contentType: image/jpeg] (from: /glass-repairs/)
+   - /wp-content/uploads/2024/05/1-4-1.jpg [sizeBytes: 297274, size: 290.3 KB, status: 200, contentType: image/jpeg] (from: /glass-repairs/)
+   - /wp-content/uploads/2024/06/roof-lanterns-skylights-cupolas-9.jpg [sizeBytes: 451995, size: 441.4 KB, status: 200, contentType: image/jpeg] (from: /roof-lanterns/)
+ </rule>
+ <rule id="images/alt-text" severity="warning" category="Images" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/images/alt-text">
+  N image(s) missing alt text
+  Pages (5/148): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/130):
+   - /wp-content/uploads/2023/03/handyman_15.png
+   - /wp-content/uploads/2023/03/handyman_15.png
+   - /wp-content/uploads/2023/03/handyman_15.png
+   - /wp-content/uploads/2023/04/55a0d1fe-07fa-4d64-8c2f-9a28957c6344-400x284.jpg
+   - /wp-content/uploads/2023/04/splashbacks.png
+ </rule>
+ <rule id="perf/js-file-size" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/js-file-size">
+  1 JS file(s) exceed 250.0 KB
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (1):
+   - /wp-content/themes/Divi/js/scripts.min.js?ver=4.27.5 [sizeBytes: 274461, size: 268.0 KB, status: 200, contentType: application/javascript] (from: /, /blind-installations/, /blog/, /contact-us/, /customer-service/; +15 more)
+ </rule>
+ <rule id="perf/lcp-hints" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/lcp-hints">
+  N likely-LCP images loaded without preload
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/20):
+   - / (2 likely-LCP images loaded without preload)
+   - /blind-installations/ (3 likely-LCP images loaded without preload)
+   - /blog/ (2 likely-LCP images loaded without preload)
+   - /contact-us/ (2 likely-LCP images loaded without preload)
+   - /customer-service/ (3 likely-LCP images loaded without preload)
+ </rule>
+ <rule id="perf/ttfb" severity="warning" category="Performance" group="performance" status="fail" docs="https://docs.squirrelscan.com/rules/perf/ttfb">
+  Very slow server response (Nms); Slow server response (638ms)
+  Pages (5/19): /, /blind-installations/, /blog/, /customer-service/, /door-window-maintenance/
+  Items (5/19):
+   - /blind-installations/ (Very slow server response (2308ms))
+   - /blog/ (Very slow server response (2726ms))
+   - /customer-service/ (Very slow server response (2730ms))
+   - /door-window-maintenance/ (Very slow server response (2390ms))
+   - /gallery/ (Very slow server response (2747ms))
+ </rule>
+ <rule id="perf/dom-size" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/dom-size">
+  Element with 61 children found
+  Pages (5/8): /blind-installations/, /customer-service/, /door-window-maintenance/, /speciality-glass-installations/, /the-benifits-of-double-glazing/
+  Items (5/8):
+   - /blind-installations/ (Element with 61 children found)
+   - /customer-service/ (Element with 61 children found)
+   - /door-window-maintenance/ (Element with 61 children found)
+   - /speciality-glass-installations/ (Element with 61 children found)
+   - /the-benifits-of-double-glazing/ (Element with 61 children found)
+ </rule>
+ <rule id="perf/total-byte-weight" severity="warning" category="Performance" group="performance" status="fail" docs="https://docs.squirrelscan.com/rules/perf/total-byte-weight">
+  Total tracked resources: 15255KB (very heavy)
+ </rule>
+ <rule id="perf/critical-request-chains" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/critical-request-chains">
+  N critical request chain(s) found
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/35):
+   - CSS: https://cityglassukltd.co.uk/wp-content/et-cache/1680/et-core-unified-1680.min.css?ver=1777906642
+   - CSS: https://cityglassukltd.co.uk/wp-content/et-cache/1721/et-core-unified-1721.min.css?ver=1777906729
+   - CSS: https://cityglassukltd.co.uk/wp-content/et-cache/1779/et-core-unified-1779.min.css?ver=1777906745
+   - CSS: https://cityglassukltd.co.uk/wp-content/et-cache/1802/et-core-unified-1802.min.css?ver=1777906753
+   - CSS: https://cityglassukltd.co.uk/wp-content/et-cache/2549/et-core-unified-2549.min.css?ver=1777906863
+ </rule>
+ <rule id="perf/duplicate-js" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/duplicate-js">
+  1 library(s) loaded multiple times
+  Pages (1): /blog/
+  Items (1):
+   - jquery (2x)
+ </rule>
+ <rule id="perf/font-delivery" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/font-delivery">
+  2 render-blocking third-party font stylesheet(s) in the critical path
+  Pages (5/28): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/8):
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&amp;subset=latin,latin-ext&amp;display=swap
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic|Bungee:regular&amp;subset=latin,latin-ext&amp;display=swap
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Encode+Sans+Condensed:100,200,300,regular,500,600,700,800,900|Bungee:regular&amp;subset=latin,latin-ext&amp;display=swap
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Bungee:regular&amp;subset=latin,latin-ext&amp;display=swap
+   - https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Bungee:regular|Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin,latin-ext&amp;display=swap
+ </rule>
+ <rule id="perf/font-loading" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/font-loading">
+  Using Google Fonts without preconnect
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+ </rule>
+ <rule id="perf/lazy-above-fold" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/lazy-above-fold">
+  1 above-fold image(s) with lazy loading
+  Pages (5/22): /, /blog/, /gallery/, /glass-balustrades-edinburgh/, /glass-repairs/
+  Items (5/11):
+   - /wp-content/uploads/2024/02/balustrade-glazing-82-1-rotated.jpg
+   - /wp-content/uploads/2024/05/1-4-1.jpg
+   - /wp-content/uploads/2024/05/Untitled-1.jpg
+   - /wp-content/uploads/2024/06/roof-lanterns-skylights-cupolas-16.jpg
+   - /wp-content/uploads/2024/07/IMG_8512.jpg
+ </rule>
+ <rule id="perf/unminified-js" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/unminified-js">
+  1 JavaScript file(s) appear unminified
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (1):
+   - jquery.fitvids.js (3.3KB, ~1.3KB savings) [reason: high newlines (2.57%), 11 comments, formatted code, excessive whitespace]
+ </rule>
+ <rule id="perf/lcp-fetchpriority" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/lcp-fetchpriority">
+  Hero/LCP image loaded eagerly without fetchpriority=&apos;high&apos; or preload
+  Pages (5/16): /blind-installations/, /customer-service/, /door-window-maintenance/, /speciality-glass-installations/, /the-benifits-of-double-glazing/
+  Items (5/8):
+   - /wp-content/uploads/2024/02/Trusted-Trader-Logo-3.png (Trusted-Trader-Logo-3.png) | &lt;img src=&quot;https://cityglassukltd.co.uk/wp-content/uploads/2024/02/Trusted-Trader-Logo-3.png&quot;&gt;
+   - /wp-content/uploads/2024/05/IMG_1190-1080x675.jpeg (IMG_1190-1080x675.jpeg) | &lt;img src=&quot;https://cityglassukltd.co.uk/wp-content/uploads/2024/05/IMG_1190-1080x675.jpeg&quot;&gt;
+   - /wp-content/uploads/2024/05/PHOTO-2023-05-02-15-31-03-768x675.jpg (PHOTO-2023-05-02-15-31-03-768x675.jpg) | &lt;img src=&quot;https://cityglassukltd.co.uk/wp-content/uploads/2024/05/PHOTO-2023-05-02-15-31-03-768x675.jpg&quot;&gt;
+   - /wp-content/uploads/2024/07/homepage.jpg (homepage.jpg) | &lt;img src=&quot;https://cityglassukltd.co.uk/wp-content/uploads/2024/07/homepage.jpg&quot;&gt;
+   - /wp-content/uploads/2025/02/4.jpg (4.jpg) | &lt;img src=&quot;https://cityglassukltd.co.uk/wp-content/uploads/2025/02/4.jpg&quot;&gt;
+ </rule>
+ <rule id="social/og-image-size" severity="warning" category="Social Media" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/social/og-image-size">
+  og:image may be too small (NxN)
+  Pages (5/12): /blind-installations/, /customer-service/, /door-window-maintenance/, /speciality-glass-installations/, /trusted-trader-status-city-glass-uk-ltd/
+  Items (5/6):
+   - /wp-content/uploads/2024/02/Trusted-Trader-Logo-3.png (og:image: https://cityglassukltd.co.uk/wp-content/uploads/2024/02/Trusted-Trader-Logo-3.png)
+   - /wp-content/uploads/2024/05/PHOTO-2023-05-02-15-31-03.jpg (og:image: https://cityglassukltd.co.uk/wp-content/uploads/2024/05/PHOTO-2023-05-02-15-31-03.jpg)
+   - /wp-content/uploads/2024/07/homepage.jpg (og:image: https://cityglassukltd.co.uk/wp-content/uploads/2024/07/homepage.jpg)
+   - /wp-content/uploads/2025/02/4.jpg (og:image: https://cityglassukltd.co.uk/wp-content/uploads/2025/02/4.jpg)
+   - /wp-content/uploads/2025/07/960px-Customer_service_photo.jpg (og:image: https://cityglassukltd.co.uk/wp-content/uploads/2025/07/960px-Customer_service_photo.jpg)
+ </rule>
+ <rule id="a11y/autocomplete-tokens" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/autocomplete-tokens">
+  N identified field(s) missing an autocomplete token
+  Pages (2): /, /contact-us/
+  Items (4):
+   - input#et_pb_contact_email_0 (email field has no autocomplete token (expected &quot;email&quot;)) | &lt;input type=&quot;text&quot; id=&quot;et_pb_contact_email_0&quot; class=&quot;input&quot; value=&quot;&quot; name=&quot;et_pb_contact_email_0&quot; data-required_mark=&quot;required&quot; data-field_type=&quot;email&quot; data-original_id=&quot;email&quot; placeholder=&quot;Email Add… [reason: missing, purpose: email, expected: email]
+   - input#et_pb_contact_email_1 (email field has no autocomplete token (expected &quot;email&quot;)) | &lt;input type=&quot;text&quot; id=&quot;et_pb_contact_email_1&quot; class=&quot;input&quot; value=&quot;&quot; name=&quot;et_pb_contact_email_1&quot; data-required_mark=&quot;required&quot; data-field_type=&quot;email&quot; data-original_id=&quot;email&quot; placeholder=&quot;Email Add… [reason: missing, purpose: email, expected: email]
+   - input#et_pb_contact_telephone_0 (phone number field has no autocomplete token (expected &quot;tel&quot;)) | &lt;input type=&quot;text&quot; id=&quot;et_pb_contact_telephone_0&quot; class=&quot;input&quot; value=&quot;&quot; name=&quot;et_pb_contact_telephone_0&quot; data-required_mark=&quot;not_required&quot; data-field_type=&quot;input&quot; data-original_id=&quot;telephone&quot; placeh… [reason: missing, purpose: phone number, expected: tel]
+   - input#et_pb_contact_telephone_1 (phone number field has no autocomplete token (expected &quot;tel&quot;)) | &lt;input type=&quot;text&quot; id=&quot;et_pb_contact_telephone_1&quot; class=&quot;input&quot; value=&quot;&quot; name=&quot;et_pb_contact_telephone_1&quot; data-required_mark=&quot;not_required&quot; data-field_type=&quot;input&quot; data-original_id=&quot;telephone&quot; placeh… [reason: missing, purpose: phone number, expected: tel]
+ </rule>
+ <rule id="a11y/color-contrast" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/color-contrast">
+  N potential color contrast issue(s)
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/21):
+   - CSS rule &quot;.et_password_protected_form p ...&quot;: light gray text color
+   - CSS rule &quot;.et_pb_bg_layout_dark_phone .e...&quot;: light gray text color
+   - CSS rule &quot;.et_pb_bg_layout_light .et_pb_...&quot;: light gray text color
+   - CSS rule &quot;.wp-caption...&quot;: light gray text color
+   - CSS rule &quot;h1 a,h2 a,h3 a,h4 a,h5 a,h6 a...&quot;: light gray text color
+ </rule>
+ <rule id="a11y/empty-heading" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/empty-heading">
+  1 empty heading(s) found
+  Pages (3): /blind-installations/, /customer-service/, /timber-windows-edinburgh/
+  Items (2):
+   - h3
+   - h4
+ </rule>
+ <rule id="a11y/focus-visible" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/focus-visible">
+  outline:none found - ensure alternative focus styles exist
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+ </rule>
+ <rule id="a11y/landmark-one-main" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/landmark-one-main">
+  Page has no main landmark
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+ </rule>
+ <rule id="a11y/heading-order" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/heading-order">
+  1 heading level skip(s) detected
+  Pages (5/9): /contact-us/, /customer-service/, /door-window-maintenance/, /speciality-glass-installations/, /the-benifits-of-double-glazing/
+  Items (3):
+   - H3 after H1
+   - H4 after H1
+   - H4 after H2
+ </rule>
+ <rule id="a11y/identical-links-same-purpose" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/identical-links-same-purpose">
+  N link text(s) lead to different destinations
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (4):
+   - &quot;customer service&quot; → 2 different URLs
+   - &quot;double glazing&quot; → 2 different URLs
+   - &quot;follow&quot; → 4 different URLs
+   - &quot;speciality glass&quot; → 2 different URLs
+ </rule>
+ <rule id="a11y/input-types" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/input-types">
+  N multi-field form(s) set no enterkeyhint; N field(s) use type=&quot;text&quot; where a specific type is correct
+  Pages (2): /, /contact-us/
+  Items (5/7):
+   - form[action=&quot;https://cityglassukltd.co.uk/&quot;] (4-field form, no field sets enterkeyhint) | &lt;form class=&quot;et_pb_contact_form clearfix&quot; method=&quot;post&quot; action=&quot;https://cityglassukltd.co.uk/&quot;&gt; [reason: missing-enterkeyhint, fields: 4]
+   - form[action=&quot;https://cityglassukltd.co.uk/&quot;] (4-field form, no field sets enterkeyhint) | &lt;form class=&quot;et_pb_contact_form clearfix&quot; method=&quot;post&quot; action=&quot;https://cityglassukltd.co.uk/&quot;&gt; [reason: missing-enterkeyhint, fields: 4]
+   - form[action=&quot;https://cityglassukltd.co.uk/contact-us/&quot;] (5-field form, no field sets enterkeyhint) | &lt;form class=&quot;et_pb_contact_form clearfix&quot; method=&quot;post&quot; action=&quot;https://cityglassukltd.co.uk/contact-us/&quot;&gt; [reason: missing-enterkeyhint, fields: 5]
+   - input#et_pb_contact_email_0 (type=&quot;text&quot; where type=&quot;email&quot; is correct) | &lt;input type=&quot;text&quot; id=&quot;et_pb_contact_email_0&quot; class=&quot;input&quot; value=&quot;&quot; name=&quot;et_pb_contact_email_0&quot; data-required_mark=&quot;required&quot; data-field_type=&quot;email&quot; data-original_id=&quot;email&quot; placeholder=&quot;Email Add… [reason: wrong-type, actual: text, expected: email]
+   - input#et_pb_contact_email_1 (type=&quot;text&quot; where type=&quot;email&quot; is correct) | &lt;input type=&quot;text&quot; id=&quot;et_pb_contact_email_1&quot; class=&quot;input&quot; value=&quot;&quot; name=&quot;et_pb_contact_email_1&quot; data-required_mark=&quot;required&quot; data-field_type=&quot;email&quot; data-original_id=&quot;email&quot; placeholder=&quot;Email Add… [reason: wrong-type, actual: text, expected: email]
+ </rule>
+ <rule id="a11y/link-text" severity="warning" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/link-text">
+  1 link(s) with no accessible text
+  Pages (2): /, https://www.trustedtrader.scot/Edinburgh/City-Glas
+  Items (1):
+   - https://www.trustedtrader.scot/Edinburgh/City-Glas (empty)
+ </rule>
+ <rule id="a11y/skip-link" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/skip-link">
+  No bypass mechanism for repetitive content
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+ </rule>
+ <rule id="eeat/about-page" severity="warning" category="E-E-A-T" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/eeat/about-page">
+  No About page found
+ </rule>
+ <rule id="eeat/privacy-policy" severity="warning" category="E-E-A-T" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/eeat/privacy-policy">
+  No Privacy Policy page found
+ </rule>
+ <rule id="local/nap-consistency" severity="warning" category="Local SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/local/nap-consistency">
+  The same phone number is formatted 3 different ways across 20 pages
+  Pages (5/12): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (3):
+   - +0131 442 3860 (&quot;+0131 442 3860&quot; on 1 page(s)) [pageCount: 1] (from: /contact-us/)
+   - 0131 442 3860 (&quot;0131 442 3860&quot; on 18 page(s)) [pageCount: 18] (from: /blind-installations/, /blog/, /customer-service/, /door-window-maintenance/, /gallery/; +5 more)
+   - 0131 4423860 (&quot;0131 4423860&quot; on 1 page(s)) [pageCount: 1] (from: /)
+ </rule>
+ <rule id="ax/agent-blocking" severity="warning" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/agent-blocking">
+  GPTBot is blocked (HTTP 403) while the browser gets 200 — often an intentional training opt-out, but confirm it was deliberate
+ </rule>
+ <rule id="ax/token-weight" severity="warning" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/token-weight">
+  Visible text is under 15% of the page HTML — agents pay token cost mostly for markup, scripts, and styles
+  Pages (5/20): /, /blind-installations/, /blog/, /contact-us/, /customer-service/
+  Items (5/20):
+   - / (~5% of HTML is visible text (~47,796 est. tokens))
+   - /blind-installations/ (~3% of HTML is visible text (~37,568 est. tokens))
+   - /blog/ (~2% of HTML is visible text (~60,234 est. tokens))
+   - /contact-us/ (~2% of HTML is visible text (~39,921 est. tokens))
+   - /customer-service/ (~3% of HTML is visible text (~36,762 est. tokens))
+ </rule>
+</issues>
+</audit>
