@@ -1,37 +1,26 @@
-# uk city glass · 网站演示
+# City Glass: Website Study
 
-围绕 uk city glass 场景制作的网站演示与前端原型，不表示该企业委托或认可。
+**A self-directed website study for City Glass, with page ideas, implementation material and review notes. The demo does not imply a commission or endorsement.**
 
-GitHub：[eli-ovops/landing-demo-uk_city_glass](https://github.com/eli-ovops/landing-demo-uk_city_glass)
+## What you will find
 
-## 内容
+A small-business website design study: the page work, supporting notes and revision context that were available in the original project. A self-directed demo is not a record of client acceptance.
 
-本次公开副本包含 9 个来源文件。
+## Start here
 
-- [`ASSET_LEDGER.md`](ASSET_LEDGER.md)
-- [`BUSINESS_FACTS_AND_SOURCES.md`](BUSINESS_FACTS_AND_SOURCES.md)
-- [`OUTREACH_DRAFT_PACKAGE.md`](OUTREACH_DRAFT_PACKAGE.md)
-- [`PURCHASE_THESIS_AND_DEMO_DIRECTIONS.md`](PURCHASE_THESIS_AND_DEMO_DIRECTIONS.md)
-- [`QA.md`](QA.md)
-- [`RESEARCH_SUMMARY.md`](RESEARCH_SUMMARY.md)
-- [`UK_REFERENCE_SET.md`](UK_REFERENCE_SET.md)
-- [`WEBSITE_CRO_AUDIT.md`](WEBSITE_CRO_AUDIT.md)
-- [`squirrel_surface_audit.llm.txt`](squirrel_surface_audit.llm.txt)
+- [Working note 1](QA.md)
+- [Working note 2](ASSET_LEDGER.md)
+- [Working note 3](RESEARCH_SUMMARY.md)
+- [Complete source inventory](SOURCE_MANIFEST.csv)
 
-文件类型：.md（8）、.txt（1）。
+## Current scope
 
-## 使用与阅读入口
+This snapshot includes 9 source files. Original media, databases, private account records and other unprocessed attachments were not included in this text-and-source release.
 
-先查看保留的原项目 README、包清单与直接相关源码；运行环境和依赖以项目内实际说明为准。
+This update improves the English presentation. It does not rerun the project, install a skill, reproduce an old test, or establish production readiness. Some original working documents retain their source language; machine-specific paths or setup assumptions may still need adaptation.
 
-## 来源与许可
+## Sources and license
 
-本仓库新增介绍及用户原创部分按 MIT 许可公开；第三方材料按其各自许可证和署名使用，不以本许可证重新授权第三方内容。
+The owner's original contributions and new presentation notes follow the [retained license](LICENSE). Third-party material keeps its own licenses and attribution; this does not relicense it.
 
-## 当前状态与验证边界
-
-- 本次完成公开副本整理和静态检查；没有运行来源代码、构建 App、安装 Skill 或启动服务。
-- 项目可能处于原型、实验或研究阶段；没有将其表述为生产交付、客户验收或经过验证的投资收益。
-- 图片、视频、数据库、真实账户记录及未确认可公开的附件没有随本次文本/源码副本上传。
-- 部分相对链接、运行依赖或素材可能仍需补齐；原始快照中的静态引用缺口数为 0，该数字不是运行失败数。
-- [本次来源文件清单](SOURCE_MANIFEST.csv)
+[Source paths and hashes](SOURCE_MANIFEST.csv)
